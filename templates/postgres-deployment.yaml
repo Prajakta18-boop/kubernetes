@@ -13,11 +13,11 @@ spec:
         app: postgres
     spec:
       containers:
-        - name: postgres-service
+        - name: postgres
           image: postgres:13
           env:
             - name: POSTGRES_DB
-              value: finalprojectdb
+              value: admindb
             - name: POSTGRES_USER
               valueFrom:
                 secretKeyRef:
