@@ -17,7 +17,7 @@ spec:
           image: prajakta2828/f1f8:latest
           env:
             - name: SPRING_DATASOURCE_URL
-              value: jdbc:postgresql://postgres:5432/admindb
+              value: jdbc:postgresql://postgres-service:5432/admindb
             - name: SPRING_DATASOURCE_USERNAME
               valueFrom:
                 secretKeyRef:

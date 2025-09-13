@@ -19,7 +19,7 @@
     WORKDIR /app
     
     # Copy only the built jar from the builder stage
-    COPY --from=builder /app/target/myapp-0.0.1-SNAPSHOT.jar app.jar
+    COPY --from=builder /app/target/*.jar app.jar
 
     # COPY *.jar app.jar
     
